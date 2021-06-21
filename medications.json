@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Medication",
+  "identifier" : "",
+  "code" : "{ CodeableConcept }",
+  "status" : "<code>",
+  "manufacturer" : "{ Reference(Organization) }",
+  "form" : "{ CodeableConcept }",
+  "amount" : "{ Ratio }",
+  "ingredient" : {
+    "itemCodeableConcept" : "{ CodeableConcept }",
+    "itemReference" : "{ Reference(Substance|Medication) }",
+    "isActive" : "<boolean>",
+    "strength" : "{ Ratio }"
+  },
+  "batch" : {
+    "lotNumber" : "<string>",
+    "expirationDate" : "<dateTime>"
+  }
+}
